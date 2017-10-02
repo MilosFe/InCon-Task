@@ -17,9 +17,10 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
     <!--build:css css/styles.min.css-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/toastr.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/toastr.min.css">
+
     <!-- endbuild -->
 </head>
 <base href="/">
@@ -29,9 +30,9 @@
     <div class="push-menu">
         <span class="logo_main"> <i class="fa fa-circle"></i>Logo</span>
         <ul class="menu-list">
-            <li><a href="#"><i class="fa fa-circle"></i> <span class="menu-list_item">Item</span> </a></li>
-            <li><a href="#"><i class="fa fa-circle"></i><span class="menu-list_item">Item</span></a></li>
-            <li><a href="#"><i class="fa fa-circle"></i><span class="menu-list_item">Item</span></a></li>
+            <li><a href="#"><i class="fa fa-circle"></i> <span class="menu-list_item">Item1</span> </a></li>
+            <li><a href="#"><i class="fa fa-circle"></i><span class="menu-list_item">Item2</span></a></li>
+            <li><a href="#"><i class="fa fa-circle"></i><span class="menu-list_item">Item3 Editor</span></a></li>
         </ul>
     </div>
 
@@ -42,10 +43,10 @@
             <nav class="navigation">
                 <ul class="navigation-list">
                     <li class="navigation-item">
-                        <a href="#Home"><i class="fa fa-power-off"></i></a>
+                        <a href="#"><i class="fa fa-power-off"></i></a>
                     </li>
                     <li class="navigation-item">
-                        <a href="#Home"><i class="fa fa-columns"></i></a>
+                        <a class="menu-list_search" href="#"><i class="fa fa-columns"></i></a>
                     </li>
                 </ul>
             </nav>
@@ -53,7 +54,7 @@
     </header>
     <aside class="search-aside">
         <div class="searchbox">
-            <input type="text" />
+            <input type="text" placeholder="Name, Order or Prodcut.No" />
             <button>
                 <i class="fa fa-search" aria-hidden="true"></i><i class="fa fa-caret-down" aria-hidden="true"></i>
             </button>
@@ -70,8 +71,8 @@
                    
             </select><br>
             <input type="radio" name="interval" value="interval"> Interval:
-            <input type="datetime" name="" id="" placeholder="2016-09-98"><i class="fa fa-calendar"></i> <span>-</span>
-            <input type="datetime" name="" id="" placeholder="2017-09-98"><i class="fa fa-calendar"></i>
+            <input class="datetime" type="datetime" name="" id="" placeholder="2016-09-98"><i class="fa fa-calendar"></i> <span>-</span>
+            <input class="datetime" type="datetime" name="" id="" placeholder="2017-09-98"><i class="fa fa-calendar"></i>
             <br>
             <label for="">Edited by </label>
             <select>
@@ -81,7 +82,6 @@
             <select>
                     <option value="all">[ALL]</option> 
             </select>
-
         </form>
     </section>
     <!-- End of Footer -->
@@ -89,6 +89,8 @@
     <script src="/js/vendor/jquery.min.js"></script>
     <script src="js/vendor/toastr.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
+
     <!-- endbuild -->
 
 </body>
