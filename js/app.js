@@ -2,7 +2,7 @@ var app = (function(global, toastr, $) {
     'use strict';
     var init = function() {
         var $headerMenu = $('.header-menu');
-        var $menuItem = $('.menu-list_item, .logo_main');
+        var $menuItem = $('.menu-list_item, .logo-text');
         var $pushMenu = $('.push-menu, .header-top , .admin-section');
         var $searchBox = $('.menu-list_search');
         var $searchAside = $('.search-aside');
