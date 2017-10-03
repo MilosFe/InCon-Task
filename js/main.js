@@ -1,5 +1,6 @@
-(function(global, toastr, $) {
+(function(global, toastr, $, application) {
     'use strict';
+    application.init();
 
     toastr.options = {
         'debug': false,
@@ -10,7 +11,5 @@
         'timeOut': 2000,
         'extendedTimeOut': 2000
     };
-
-    toastr.info('Admin Panel');
-
-})(window, toastr, jQuery);
+    toastr.info('Admin Panel Active');
+})(window, toastr, jQuery, app);

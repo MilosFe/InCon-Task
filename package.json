@@ -1,0 +1,20 @@
+{
+    "name": "app",
+    "version": "1.0.0",
+    "description": "Test app for consolia",
+    "main": "index.js",
+    "scripts": {
+        "test": "test",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TensaZangetsu/InCon-Task.git"
+    },
+    "author": "Radoman Milos",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/TensaZangetsu/InCon-Task/issues"
+    },
+    "homepage": "https://github.com/TensaZangetsu/InCon-Task#readme"
+}
